@@ -1,20 +1,20 @@
 ---
 - name: Update package lists
-  apt: update_cache=yes
+  yum: update_cache=yes
 
 - name: Install tmux
-  apt: name=tmux state=present
+  yum: name=tmux state=present
 
 - name: Install zsh
-  apt: name=zsh state=present
+  yum: name=zsh state=present
 
 - name: Install openssh
-  apt: name=openssh-server state=present
+  yum: name=openssh-server state=present
 
 
 
 - name: Install several packages at once (python dev)
-  apt: name={{ item }} state=present
+  yum: name={{ item }} state=present
   with_items:
     - python # silly -- already installed
     - python-dev
