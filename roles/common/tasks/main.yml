@@ -13,12 +13,12 @@
 
 
 
-# - name: Install several packages at once (python dev)
-#   apt: name={{ item }} state=present
-#   with_items:
-#     - python # silly -- already installed
-#     - python-dev
-#     - python-virtualenv
+- name: Install several packages at once (python dev)
+  apt: name={{ item }} state=present
+  with_items:
+    - python # silly -- already installed
+    - python-dev
+    - python-virtualenv
 
 - name: Create the 'dave' user
   user: name=dave shell=/bin/bash
