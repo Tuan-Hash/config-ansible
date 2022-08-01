@@ -2,7 +2,7 @@
 - name: Show off some basic Ansible features
   hosts: 172.16.16.16
   # remote_user: user
-  sudo: yes
+  # sudo: yes
 
   roles:
     - common
