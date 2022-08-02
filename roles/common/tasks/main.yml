@@ -1,9 +1,9 @@
 ---
 
-- name: Install
+- name: Install API
   hosts: all
   tasks:
     - name: Install unzip
-      yum:
+      apt:
         name: unzip
         state: latest
