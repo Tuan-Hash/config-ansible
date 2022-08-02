@@ -1,6 +1,6 @@
 ---
 
-- name: Install API
+- name: Test API
   hosts: all
   tasks:
     - name: Install unzip
