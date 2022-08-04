@@ -1,7 +1,9 @@
 ---
 - name: Install unzip
   become: yes
-  apt: name=unzip state=latest
+  yum: 
+    name: unzip 
+    state: latest
 
 # - name: Install tmux
 #   apt: name=tmux state=present
