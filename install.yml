@@ -1,0 +1,8 @@
+---
+- name: Install AWX
+  hosts: all
+  tasks:
+    - name: Run setup.sh script 
+      ansible.builtin.script: install_ansible.sh
+
+

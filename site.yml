@@ -1,8 +1,0 @@
----
-- name: Show off some basic Ansible features
-  hosts: all
-  # remote_user: user
-  # sudo: yes
-
-  roles:
-    - common
